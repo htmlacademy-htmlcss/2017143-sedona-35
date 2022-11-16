@@ -15,7 +15,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   Font-size: 18px;
   Line-height: 21px;
@@ -26,6 +34,28 @@ body {
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+}
+
+.navigation-logo {
+  width: 140px;
+  margin-left: 70px;
+  margin-right: 44px;
+}
+
+.navigation-list {
+  width: 340px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 268px;
+  margin-right: 70px;
 }
 
 .navigation-link {
@@ -48,6 +78,10 @@ body {
   text-transform: uppercase;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   background-image: url("../images/index-background.jpg");
   background-color: #FFFFFF;
@@ -56,14 +90,46 @@ body {
   background-repeat: no-repeat;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .advantages {
   text-align: center;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+advantage-item {
+  width: 400px;
+  margin: 0;
 }
 
 .advantages-main-description {
   font-family: "PT Sans", sans-serif;
   Font-size: 22px;
   Line-height: 26px;
+}
+
+.advantages-img-left {
+  display: block;
+  margin-right: auto;
+}
+
+.advantages-img-right {
+  display: block;
+  margin-left: auto;
 }
 
 .advantages-title {
@@ -74,7 +140,7 @@ body {
   color: #000000;
 }
 
-.advantage-item-darkblue {
+.advantage-item-image {
   background-color: rgba(130, 179, 211, 1);
   color: #FFFFFF;
 }
@@ -157,6 +223,17 @@ advantage-item-souvenirs {
   line-height: 36px;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.newsletter {
+  width: 1200px;
+  text-align: center;
+}
+
 .newsletter-description {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -170,7 +247,14 @@ advantage-item-souvenirs {
   line-height: 36px;
 }
 
+.footer-social {
+  width: 142px;
+  margin-left: 70px;
+  margin-right: 236px;
+}
+
 .footer-contact {
+  width: 331px;
   font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
@@ -180,6 +264,9 @@ advantage-item-souvenirs {
 }
 
 .footer-logo {
+  width: 115px;
+  margin-right: 70px;
+  margin-left: 236px;
   text-align: center;
 }
 
@@ -193,6 +280,21 @@ advantage-item-souvenirs {
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
+}
+
+.catalog-products {
+  display: flex;
+  width: 1200px;
+}
+
+.catalog-filter-group {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.catalog-products-list {
+  width: 151px;
+  margin-left: 70px;
 }
 
 .main-inner {
