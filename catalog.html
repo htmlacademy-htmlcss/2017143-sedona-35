@@ -58,7 +58,7 @@
       </header>
 
       <section class="catalog-products">
-        <h2 class="visually-hidden" hidden>Список гостиниц с фильтрами</h2>
+        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -118,21 +118,23 @@
       </section>
 
       <section class="catalog-products">
+        <div class="sorting-container">
        <h2 class="catalog-products-search-results">Найдено гостиниц: 38</h2>
        <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвое</option>
         <option value="popular">Сначала популярное</option>
         <option value="expensive">Сначала дорогое</option>
       </select>
-      <a class="button button-light" href="#">
+      <a class="button button-light catalog-button" href="#">
         <span class="visually-hidden">Показать список</span>
       </a>
-      <a href="#" class="button button-light">
+      <a href="#" class="button button-light catalog-button">
         <span class="visually-hidden">Показать крупные значки</span>
       </a>
-      <a class="button" href="#">
+      <a class="button catalog-button" href="#">
         <span class="visually-hidden">Показать карточки</span>
       </a>
+        </div>
 
       <ul class="product-list">
         <li class="product-card">
@@ -180,7 +182,7 @@
               <a class="product-card-button button">Рейтинг: 5,0</a>
               </li>
       </ul>
-
+      <div class="pagination-container">
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -194,6 +196,12 @@
         <li class="pagination-item">
           <a class="pagination-link pagination-blue" href="#">4</a>
         </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">
+            <span class="visually-hidden">троеточие</span>
+          </a>
+        </li>
+        <!-- невидимая область
         <li class="pagination-item">
           <a class="pagination-link" href="#">5</a>
         </li>
@@ -209,11 +217,13 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">9</a>
         </li>
+      -->
         <li class="pagination-item">
           <a class="pagination-link pagination-blue" href="#">10</a>
         </li>
       </ul>
       </section>
+      </div>
       </div>
      </main>
 
