@@ -8,8 +8,8 @@
   <body>
     <header class="page-header">
      <nav class="navigation">
-      <a class="navigation-link">
-        <img src="images/header/logo.svg" alt="Логотип 'Седона'">
+      <a class="navigation-logo">
+        <img src="images/header/logo.svg" width="140" height="71" alt="Логотип 'Седона'">
         </a>
       <ul class="navigation-list">
       <li class="navigation-item">
@@ -41,18 +41,19 @@
      </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-container main-index">
+      <div class="page-container">
       <h1 class="visually-hidden">Турагенство "Седона"</h1>
-      <img class="logo" src="images/welcome.svg" alt="Логотип турагенства 'Седона'">
+      <img class="logo" src="images/welcome.svg" width="1200" height="485" alt="Логотип турагенства 'Седона'">
       <section class="advantages">
         <h2 class="advantages-main-title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
           <p class="advantages-main-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="advantages-list">
-            <li class="advantage-item advantage-item-darkblue ">
+            <li class="advantage-item advantage-item-image">
               <h3 class="advantage-title">Настоящий городок</h3>
               <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img class="advantages-img" src="images/real city.jpg" alt="Город Седона">
+              <img class="advantages-img-left" src="images/real city.jpg" width="800" height="384" alt="Город Седона">
             </li>
             <li class="advantage-item advantage-item-white">
               <h3 class="advantage-title">Небольшая площадь</h3>
@@ -66,21 +67,24 @@
               <h3 class="advantage-title">Мало туристов</h3>
               <p class="advantage-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="advantage-item advantage-item-darkblue">
-              <img class="advantages-img" src="images/devil-bridge.jpg" alt="Мост дьявола">
+            <li class="advantage-item advantage-item-image">
+              <img class="advantages-img-right" src="images/devil-bridge.jpg" width="800" height="384" alt="Мост дьявола">
               <h3 class="advantage-title">Там есть мост дьявола</h3>
               <p class="advantage-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </li>
-            <li class="advantage-item-hotel advantage-item-blue">
+            <li class="advantage-item-hotel advantage-item-service advantage-item-blue">
+              <img class="advantages-img" src="images/hotel.svg" width="75" height="72" alt="Отель">
               <h3 class="advantage-title">Жильё</h3>
               <p class="advantage-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="advantage-item-food advantage-item-white">
+            <li class="advantage-item-food advantage-item-service advantage-item-white">
+              <img class="advantages-img" src="images/food.svg" width="75" height="72" alt="бургер">
               <h3 class="advantage-title">Еда</h3>
               <p class="advantage-description">Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="advantage-item-souvenirs advantage-item-blue">
+            <li class="advantage-item-souvenirs advantage-item-service advantage-item-blue">
+              <img class="advantage-img" src="images/souvenirs.svg " width="75" height="72" alt="сувенир">
               <h3 class="advantage-title">Сувениры</h3>
               <p class="advantage-description">Не только китайского,
                 но и настоящего местного производства!</p>
@@ -92,10 +96,11 @@
         <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
-
+      </div>
     </main>
+
     <footer class="page-footer">
-      <section class="newsletter">
+         <section class="newsletter">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -103,6 +108,7 @@
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
+      <div class="page-footer-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
@@ -133,6 +139,7 @@
           <span class="visually-hidden">Логотип HTML Academy</span>
         </a>
       </section>
+    </div>
     </footer>
 
 
